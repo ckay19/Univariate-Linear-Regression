@@ -1,0 +1,83 @@
+/* Styles for the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('/static/img/a.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px;
+}
+
+/* Styles for the h1 heading */
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgba(213, 203, 203, 0.93);
+    font-weight: bolder;
+}
+
+/* Styles for the form */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #212020ee;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.293);
+}
+
+form h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    color: rgba(213, 203, 203, 0.93);
+    font-weight: bolder;
+}
+
+/* Styles for the form labels */
+form label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: rgba(227, 216, 216, 0.945);
+    font-style: Helvetica;
+    font-weight: bold;
+}
+
+/* Styles for the form input fields */
+form input[type="float"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 1px;
+    border: 1px solid #191616;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fffefed8;
+}
+
+/* Styles for the submit button */
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Styles for the result heading */
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(193, 186, 175);
+}
+
+/* Responsive styles */
+@media (max-width: 500px) {
+    form {
+        max-width: 300px;
+    }
+}

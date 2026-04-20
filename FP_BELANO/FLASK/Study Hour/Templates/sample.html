@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Prediction</title>
+    <style>
+        body {
+            font-family: 'Times New Roman';
+            background-image: url('/static/img/STUDY HOURS.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: rgba(245, 245, 220, 0.6);
+            padding: 40px;
+            border-radius: 30px;
+            width: 80%;
+            max-width: 600px;
+        }
+        form {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+        input[type="text"] {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1.5px solid #ccc;
+            font-size: 22px;
+            width: 50%;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            background-color: Maroon;
+            color: white;
+            font-size: 22px;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 20px;
+            background-color: rgba(200, 42, 42, 0.9);
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: Maroon; font-size: 40px; font-weight: bold;">Student Performance Prediction Using Supervised Machine Learning</h1>
+        <form method="POST" action="{{ url_for('predict') }}">
+            <label for="study_hours" style="color: black; font-size: 24px; font-weight: bold;">Study Hours:</label><br>
+            <input type="text" id="study_hours" name="Study hours" placeholder="Enter study hours"><br>
+            <input type="submit" value="Predict">
+        </form>
+        {% if show_result %}
+        <div class="result">
+            {{ liked }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
+
