@@ -2,10 +2,11 @@
 Evaluating the Impact of Study Time on Student’s Academic Performance: A Univariate Linear Regression Approach
 
 ### **Author**
-Christine Kyla O. Belano
-College of Computer Studies
+Christine Kyla O. Belano <br>
+College of Computer Studies <br>
 Camarines Sur Polytechnic Colleges
 
+---
 ### **📌 Overview**
 
 This project explores the relationship between study time (hours) and student academic performance (scores) using a Univariate Linear Regression model.
@@ -17,8 +18,8 @@ It also includes a Flask-based web application where users can input study hours
 - Build a predictive model using linear regression
 - Evaluate model accuracy using R-squared metrics
 - Develop a user-friendly web interface for predictions
-
-🛠️ Technologies Used
+  
+### **🛠️ Technologies Used**
 - Python
 - Flask
 - Scikit-learn
@@ -27,5 +28,6 @@ It also includes a Flask-based web application where users can input study hours
 - Pickle (model saving)
 - HTML & CSS
 
+---
 This project is for academic and educational purposes.
 
